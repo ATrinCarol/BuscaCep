@@ -7,19 +7,18 @@ import one.digitalinnovation.gof.model.PessoaDoadora;
  * isso, se necessário, podemos ter multiplas implementações dessa mesma
  * interface.
  * 
- * By @author falvojr
+ * @author falvojr
  */
-
 public interface PessoaDoadoraService {
-	
-	Iterable<PessoaDoadora> buscarTodas();
-	
+
+	Iterable<PessoaDoadora> buscarTodos();
+
 	PessoaDoadora buscarPorId(Long id);
-	
+
 	void inserir(PessoaDoadora pessoaDoadora);
-	
+
 	void atualizar(Long id, PessoaDoadora pessoaDoadora);
-	
+
 	void deletar(Long id);
 
 }
